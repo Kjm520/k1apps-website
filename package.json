@@ -1,0 +1,25 @@
+{
+  "name": "k1abase",
+  "version": "1.0.1",
+  "description": "This is the readme.md file",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kjm520/k1a.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kjm520/k1a.io/issues"
+  },
+  "homepage": "https://github.com/Kjm520/k1a.io#readme",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
