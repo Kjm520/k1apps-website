@@ -56,6 +56,7 @@
 
 ### Edit #1 | 4/9/2025
 - Changed to GH Pages, removed CF Worker. 
+- Tried semantic-release.. too much for a simple project like this. Removed.
 
 
 
