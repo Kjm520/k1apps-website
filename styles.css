@@ -1,48 +1,68 @@
 /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styles */
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Header Styles */
-  header {
-    background: #1f2a38;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-  }
-  
-  /* Main Content Styles */
-  main {
-    margin: 20px 0;
-  }
-  
-  /* Footer Styles */
-  footer {
-    text-align: center;
-    font-size: 0.8em;
-    color: #ffffff;
-    margin-top: 20px;
-  }
-  
 
 
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-decoration: none;
-  }
-  
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f7f7f7;
+}
+
+header,
+footer {
+  background: #1f2a38;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #1f2a38;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+dl dt {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+dl dd {
+  margin: 0.5rem 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}

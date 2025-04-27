@@ -11,6 +11,21 @@
       href="https://k1freight.com/wp-content/uploads/2025/03/favicon-96x96-1.png"
       sizes="96x96"
     />
+    <!-- Flex layout for sticky footer -->
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -18,24 +33,16 @@
       <p>K1 Apps</p>
     </header>
 
-
     <main>
-      <div >
-        
+      <div>
         <a href="appinfo/buy-later.html" class="card">Buy Later | 30 Day Countdown</a>
       </div>
-
-
-
-
-
-
-
     </main>
+
+    <footer>
+      <p>© 2024 K1A. All rights reserved.</p>
+    </footer>
+
     <script src="scripts.js"></script>
   </body>
-
-  <footer>
-    <p>© 2024 K1A. All rights reserved.</p>
-  </footer>
 </html>
