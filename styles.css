@@ -16,10 +16,11 @@
   
   /* Header Styles */
   header {
-    background: #0437F2;
+    background: #1f2a38;
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-radius: 20px;
   }
   
   /* Main Content Styles */
@@ -42,5 +43,6 @@
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-decoration: none;
   }
   
