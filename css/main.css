@@ -1,20 +1,142 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color: #333;
+	background: #e5e7eb;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	background-color: #f3f4f6;
+}
+
+header,
+footer {
+	background: #374151;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
+
+header {
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+footer {
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	flex: 1;
+	max-width: 90%;
+	margin: 2rem auto;
+	padding: 0 1rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f4f6;
+}
 
 
+h1 {
+	color: #1f2a38;
+}
+
+h2 {
+	color: #1f2a38;
+	font-size: 40px;
+}
 
 
+h3 {
+	color: #1f2a38;
+	font-size: 20px;
+}
+
+section {
+	margin-bottom: 2rem;
+
+}
+
+a {
+	color: #007aff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+dl dt {
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+dl dd {
+	margin: 0.5rem 0 0 1rem;
+}
+
+ul {
+	padding-left: 1.5rem;
+}
 
 
+.cardContainer {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	color: #1f3726;
+}
 
+.card {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 12px;
+	box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
 
+.cardLeft {
+	flex: 1;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	align-self: center;
+}
 
+.cardRight {
+	flex: 1;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	align-self: center;
+}
 
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; margin: 0; padding: 0; color: #333; background: #f7f7f7; }
-header, footer { background: #1f2a38; color: #fff; padding: 1rem; text-align: center; }
-main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-h1, h2, h3 { color: #1f2a38; }
-section { margin-bottom: 2rem; }
-a { color: #007aff; text-decoration: none; }
-a:hover { text-decoration: underline; }
-dl dt { font-weight: bold; margin-top: 1rem; }
-dl dd { margin: 0.5rem 0 0 1rem; }
-ul { padding-left: 1.5rem; }
+.divider {
+	width: 1px;
+	background-color: #cbd5e1;
+	align-self: stretch;
+}
+
+.preview-pic {
+	width: 100px;
+	border-radius: 5px;
+}
