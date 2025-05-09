@@ -19,3 +19,6 @@ Feedback or Suggestions input?
 
 
 how to make a universal / portable header/footer that I don't have to reconstruct?
+
+
+feedback app specific page or general feedback page?
