@@ -4,7 +4,7 @@ html {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: calibri, arial;
 	color: #333;
 	background: #e5e7eb;
 }
@@ -66,11 +66,11 @@ h2 {
 
 h3 {
 	color: #1f2a38;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 section {
-	margin-bottom: 2rem;
+	margin-bottom: 1em;
 
 }
 
@@ -83,10 +83,16 @@ a:hover {
 	text-decoration: underline;
 }
 
-dl dt {
+dt {
 	font-weight: bold;
 	margin-top: 1rem;
 }
+
+dl {
+	margin-top: 1rem;
+	margin-left: 0.5rem;
+}
+
 
 dl dd {
 	margin: 0.5rem 0 0 1rem;
@@ -95,7 +101,6 @@ dl dd {
 ul {
 	padding-left: 1.5rem;
 }
-
 
 .cardContainer {
 	display: flex;
@@ -141,4 +146,8 @@ ul {
 .preview-pic {
 	width: 100px;
 	border-radius: 5px;
+}
+
+e {
+	font-weight: 550;
 }
