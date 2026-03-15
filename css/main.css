@@ -1,232 +1,352 @@
-html {
-	height: 100%;
+/* ── Reset & Base ─────────────────────────────────── */
+
+*, *::before, *::after {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	font-family: calibri, arial;
-	color: #333;
-	background: #e5e7eb;
+}
+
+html {
+	height: 100%;
+	font-family: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+	background: #f4f6f9;
+	color: #001840;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	background-color: #f3f4f6;
+	background: #f4f6f9;
 }
 
-header,
-footer {
-	background: #374151;
-	color: #fff;
-	padding: 1rem;
-	text-align: center;
-	border-radius: 5px;
-}
-
-header {
-	height: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-footer {
-	height: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+/* ── Main ────────────────────────────────────────── */
 
 main {
 	flex: 1;
-	max-width: 90%;
-	margin: 2rem auto;
-	padding: 0 1rem;
 	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 3rem 1.5rem;
 	display: flex;
 	flex-direction: column;
-	background-color: #f3f4f6;
 }
 
+/* ── Page nav (inner pages) ──────────────────────── */
+
+.page-nav {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2.5rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid rgba(0, 24, 64, 0.08);
+}
+
+.back-link {
+	font-size: 13px;
+	font-weight: 600;
+	color: #0068ff;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+	transition: color 0.15s ease;
+}
+
+.back-link:hover {
+	color: #0050c8;
+	text-decoration: none;
+}
+
+.page-nav-title {
+	font-size: 14px;
+	color: #8faabf;
+	font-weight: 400;
+}
+
+/* ── Typography (app detail pages) ──────────────── */
 
 h1 {
-	color: #1f2a38;
-	font-size: 40px;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #001840;
+	margin-bottom: 0.5rem;
 }
 
 h2 {
-	color: #1f2a38;
-	font-size: 24px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #1a3050;
+	margin-bottom: 0.35rem;
 }
 
-
 h3 {
-	color: #1f2a38;
-	font-size: 12px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #4a6070;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
 }
 
 section {
-	margin-bottom: 1em;
+	margin-bottom: 2.25rem;
+}
 
+p {
+	font-size: 15px;
+	line-height: 1.75;
+	color: #4a6070;
+	margin-bottom: 0.75rem;
 }
 
 a {
-	color: #007aff;
+	color: #0068ff;
 	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-dt {
-	font-weight: bold;
-	margin-top: 1rem;
-}
-
-dl {
-	margin-top: 1rem;
-	margin-left: 0.5rem;
-}
-
-
-dl dd {
-	margin: 0.5rem 0 0 1rem;
+	color: #0050c8;
+	text-decoration: none;
 }
 
 ul {
-	padding-left: 1.5rem;
+	padding-left: 1.25rem;
+	color: #4a6070;
+	line-height: 1.9;
+	font-size: 15px;
 }
+
+dl {
+	margin-top: 0.5rem;
+}
+
+dt {
+	font-weight: 600;
+	color: #1a3050;
+	font-size: 15px;
+	margin-top: 1.25rem;
+}
+
+dl dd {
+	color: #4a6070;
+	margin: 0.25rem 0 0 1rem;
+	line-height: 1.7;
+	font-size: 15px;
+}
+
+/* ── Hero (homepage) ─────────────────────────────── */
+
+.hero {
+	text-align: center;
+	padding: 3.5rem 0 2.5rem;
+}
+
+.hero h1 {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 80px;
+	font-weight: 400;
+	letter-spacing: 0.14em;
+	color: #001840;
+	margin-bottom: 0.75rem;
+	line-height: 1;
+}
+
+.hero p {
+	font-size: 17px;
+	color: #8faabf;
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	margin: 0;
+}
+
+/* ── Cards ───────────────────────────────────────── */
 
 .cardContainer {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
-	color: #1f3726;
+	gap: 1rem;
 }
 
 .card {
 	display: flex;
 	flex-direction: row;
-	background-color: #fff;
-	padding: 20px;
-	margin-top: 10px;
-	border-radius: 12px;
-	box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+	align-items: stretch;
+	background: #ffffff;
+	border-radius: 16px;
+	border: 1px solid rgba(0, 24, 64, 0.08);
+	box-shadow: 0 2px 12px rgba(0, 24, 64, 0.06);
+	overflow: hidden;
+	transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+	border-color: rgba(0, 104, 255, 0.35);
+	transform: translateY(-2px);
+	box-shadow: 0 10px 36px rgba(0, 104, 255, 0.1);
 }
 
 .cardLeft {
 	flex: 1;
-	margin: 10px;
-	padding: 10px;
-	text-align: center;
-	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 2.25rem 2.5rem;
+	gap: 0.4rem;
 }
 
-.cardRight {
-	flex: 1;
-	margin: 10px;
-	padding: 10px;
-	text-align: center;
-	align-self: center;
+.card-name {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 44px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #001840;
+	line-height: 1;
+	margin: 0;
+}
+
+.card-name a {
+	color: #001840;
+	text-decoration: none;
+	transition: color 0.15s ease;
+}
+
+.card-name a:hover {
+	color: #0068ff;
+	text-decoration: none;
+}
+
+.card-subtitle {
+	font-size: 11px;
+	font-weight: 500;
+	color: #8faabf;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0;
+}
+
+.card-desc {
+	font-size: 15px;
+	color: #4a6070;
+	line-height: 1.6;
+	margin: 0.5rem 0 0.75rem;
 }
 
 .divider {
 	width: 1px;
-	background-color: #cbd5e1;
-	align-self: stretch;
+	background: rgba(0, 104, 255, 0.1);
+	flex-shrink: 0;
+}
+
+.cardRight {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 1.5rem;
+	gap: 0.75rem;
+	background: #f4f6f9;
 }
 
 .preview-pic {
 	width: 30%;
-	border-radius: 5px;
+	border-radius: 12px;
+	box-shadow: 0 6px 20px rgba(0, 24, 64, 0.15);
 }
 
-e {
-	font-weight: 550;
-	text-decoration: underline;
+/* ── Badge ───────────────────────────────────────── */
+
+.badge {
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	padding: 4px 10px;
+	border-radius: 999px;
+	margin-bottom: 0.5rem;
 }
 
+.badge--ios-app {
+	background: rgba(0, 104, 255, 0.1);
+	color: #0050c8;
+}
 
+.badge--web-app {
+	background: rgba(0, 160, 100, 0.1);
+	color: #006640;
+}
 
+/* ── Button ──────────────────────────────────────── */
 
+.btn {
+	display: inline-block;
+	background: #0068ff;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 22px;
+	font-family: 'Barlow', inherit;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+	transition: background 0.15s ease, transform 0.15s ease;
+	margin-top: 0.25rem;
+}
 
+.btn:hover {
+	background: #0050c8;
+	transform: translateY(-1px);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ── Responsive ──────────────────────────────────── */
 
 @media (max-width: 768px) {
-
-
-
-	h1 {
-		font-size: 24px;
+	main {
+		padding: 1.5rem 1rem;
 	}
 
+	.hero {
+		padding: 2rem 0 1.5rem;
+	}
+
+	.hero h1 {
+		font-size: 56px;
+	}
+
+	.hero p {
+		font-size: 15px;
+	}
+
+	.card {
+		flex-direction: column;
+	}
+
+	.cardLeft {
+		padding: 1.5rem;
+	}
+
+	.cardRight {
+		padding: 1.25rem 1.5rem 1.5rem;
+		border-top: 1px solid rgba(0, 104, 255, 0.1);
+	}
+
+	.divider {
+		display: none;
+	}
+
+	.card-name {
+		font-size: 34px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
 
 	h2 {
 		font-size: 16px;
 	}
-
-
-	h3 {
-		font-size: 16px;
-	}
-
-	.cardContainer {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.card {
-		display: flex;
-		flex-direction: column;
-		padding: 20px;
-		margin-top: 10px;
-		border-radius: 12px;
-	}
-
-	.cardLeft {
-		flex: 1;
-		margin: 5px;
-		padding: 5px;
-		text-align: center;
-		align-self: center;
-	}
-
-	.cardRight {
-		flex: 1;
-		margin: 5x;
-		padding: 5px;
-		text-align: center;
-		align-self: center;
-	}
-
-	.divider {
-		width: 100%;
-		height: 1px;
-	}
-
 }

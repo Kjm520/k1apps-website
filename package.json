@@ -1,0 +1,26 @@
+{
+  "name": "k1a-website",
+  "version": "1.0.0",
+  "description": "This is a bare bones site to contain required iOS info (privacy policy, about page, etc). Currently there is only the one app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kjm520/k1a.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kjm520/k1a.io/issues"
+  },
+  "homepage": "https://github.com/Kjm520/k1a.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

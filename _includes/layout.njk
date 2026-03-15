@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>{{ title }}</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<link rel="icon" type="image/png" href="https://k1freight.com/wp-content/uploads/2025/03/favicon-96x96-1.png" sizes="96x96" />
+</head>
+
+<body>
+	<main>
+		{% if headerTitle %}
+		<nav class="page-nav">
+			<a href="/" class="back-link">← K1 Apps</a>
+			<span class="page-nav-title">{{ headerTitle }}</span>
+		</nav>
+		{% endif %}
+
+		{{ content | safe }}
+	</main>
+
+</body>
+
+</html>
