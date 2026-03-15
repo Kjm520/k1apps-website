@@ -1,0 +1,40 @@
+---
+layout: layout.njk
+title: K1 Apps
+---
+
+<div class="hero">
+	<h1>K1 Apps</h1>
+	<p>A small collection of tools built for real problems.</p>
+</div>
+
+<div class="cardContainer">
+	{% for project in projects %}
+	<div class="card">
+		<div class="cardLeft">
+			<span class="badge badge--{{ project.type | lower | replace(' ', '-') }}">{{ project.type }}</span>
+			<h2 class="card-name">
+				{% if project.nameLinked %}
+				<a href="/apps/{{ project.slug }}/">{{ project.name }}</a>
+				{% else %}
+				{{ project.name }}
+				{% endif %}
+			</h2>
+			<p class="card-subtitle">{{ project.subtitle }}</p>
+			<p class="card-desc">{{ project.description }}</p>
+			<button class="btn" type="button" onclick="window.open('{{ project.link }}')">
+				{{ project.linkLabel }}
+			</button>
+		</div>
+
+		{% if project.images.length %}
+		<div class="divider"></div>
+		<div class="cardRight">
+			{% for img in project.images %}
+			<img class="preview-pic" src="{{ img }}" alt="{{ project.name }} screenshot" />
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+	{% endfor %}
+</div>

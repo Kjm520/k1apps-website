@@ -1,0 +1,31 @@
+module.exports = [
+	{
+		name: "Buy Later",
+		nameLinked: true,
+		subtitle: "30 Day Countdown",
+		slug: "buy-later",
+		type: "iOS App",
+		description: "Delay impulse buys with a fixed 30 day cooldown",
+		link: "https://apps.apple.com/us/app/buy-later-30-day-countdown/id6745124585",
+		linkLabel: "View in App Store",
+		images: [
+			"/assets/buy-later/01.png",
+			"/assets/buy-later/02.png",
+			"/assets/buy-later/04.png",
+		],
+	},
+	{
+		name: "truckload.io",
+		subtitle: "Packing Visualization",
+		slug: "truckloadio",
+		type: "Web App",
+		description: "3D truckload packing visualization and load optimization",
+		link: "https://truckload.io",
+		linkLabel: "Visit Site",
+		images: [
+			"/assets/truckloadio/01.png",
+			"/assets/truckloadio/02.png",
+			"/assets/truckloadio/03.png",
+		],
+	},
+];
