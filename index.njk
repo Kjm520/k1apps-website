@@ -27,7 +27,10 @@ title: K1 Apps
 	{% for project in projects %}
 	<div class="card">
 		<div class="cardLeft">
-			<span class="badge badge--{{ project.type | lower | replace(' ', '-') }}">{{ project.type }}</span>
+			<div class="card-pills">
+				<span class="badge badge--{{ project.type | lower | replace(' ', '-') }}">{{ project.type }}</span>
+				{% if project.tags %}{% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif %}
+			</div>
 			<h2 class="card-name">
 				{% if project.nameLinked %}
 				<a href="/apps/{{ project.slug }}/">{{ project.name }}</a>
@@ -44,7 +47,7 @@ title: K1 Apps
 
 		{% if project.images.length %}
 		<div class="divider"></div>
-		<div class="cardRight">
+		<div class="cardRight {% if project.imageLayout === 'landscape' %}cardRight--landscape{% endif %}">
 			{% for img in project.images %}
 			<img class="preview-pic" src="{{ img }}" alt="{{ project.name }} screenshot" />
 			{% endfor %}
