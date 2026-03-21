@@ -21,7 +21,7 @@ module.exports = [
 		subtitle: "Load Planner",
 		slug: "truckload-io",
 		type: "iOS App",
-		tags: ["React Native", "Expo", "JSX"],
+		tags: ["React Native", "Expo", "JSX", "Webview"],
 		description: "3D truckload packing visualization and load optimization for iPhone",
 		link: "https://apps.apple.com/us/app/truckload-io/",
 		linkLabel: "View in App Store",
