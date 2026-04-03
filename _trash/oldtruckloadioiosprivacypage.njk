@@ -1,51 +1,22 @@
 ---
 layout: layout.njk
-title: truckload.io iOS - Support
-headerTitle: truckload.io (web)
+title: truckload.io - Privacy Policy
+headerTitle: truckload.io for iOS
 ---
 
-<section>
-	<h1>About the App</h1>
-	<p>
-		<strong>truckload.io</strong> is a 3D truckload packing visualization and load optimization tool.
-	</p>
-	<p>
-		Plan freight loads visually before they ever reach the dock. Arrange cargo, minimize dead space, and
-		finalize your packing plan.
-	</p>
-</section>
+
+
+
+<h1>Privacy Policy</h1>
 
 <section>
-	<h2>Features</h2>
-	<ul>
-		<li>Interactive 3D visualization of trailer space</li>
-		<li>Load optimization to minimize wasted space</li>
-		<li>Add and arrange cargo items with dimensions and weight</li>
-	</ul>
-</section>
-
-<section>
-	<h2>Contact Support</h2>
-	<p>
-		For help, bug reports, or feature suggestions, email
-		<a href="mailto:kevin@k1apps.dev">kevin@k1apps.dev</a>.
-	</p>
-</section>
-
-
-
-
-
-<section>
-	<h1>Privacy Policy</h1>
+	<h2>Policy</h2>
 	<p>
 		truckload.io is designed as a web application,
-		<a href="https://truckload.io">https://truckload.io</a>, and both the web and the mobile iOS versions use the web app's
-		backend for processing the loading calculations. 
-		
-		truckload.io does not use any third-party analytics, advertising, or
+		<a href="https://truckload.io">https://truckload.io</a>, and the mobile iOS version utilizes the web app's
+		backend for processing the loading calculations. truckload.io does not use any third-party analytics, advertising, or
 		tracking services, nor does it store any data. For more information about the data transmitted between the app and 
-		the backend, please see below</a>. 
+		the backend, please see the <a href="../truckload-io-web/privacy.njk">privacy page for the web app</a>. 
 	</p>
 </section>
 
@@ -54,46 +25,40 @@ headerTitle: truckload.io (web)
 	<h3>Request Payload Data:</h3>
 	<pre>
 <code>
-{
-    "equipment": "53_dry_van",
-    "items": [
-        {
-            "name": "Example Item A",
-            "shape": "box",
-            "length": 48,
-            "width": 48,
-            "height": 48,
-            "weight": 100,
-            "quantity": 20,
-            "color": "#00d4ff",
-            "stackable": true,
-            "canPlaceOnTop": true,
-            "maxStackHeight": 3,
-            "rotationAllowed": true,
-            "tippingAllowed": false,
-            "id": "2a0baac6-8809-4e6f-9912-951fa035837e"
-        },
-        {
-            "name": "Example Item B",
-            "shape": "box",
-            "length": 60,
-            "width": 60,
-            "height": 30,
-            "weight": 400,
-            "quantity": 6,
-            "color": "#7c3aed",
-            "stackable": true,
-            "canPlaceOnTop": true,
-            "maxStackHeight": 3,
-            "rotationAllowed": true,
-            "tippingAllowed": false,
-            "id": "1180550b-774e-4855-a741-c88742d5df9a"
-        }
-    ],
-    "loading_direction": "column_first",
-    "global_max_stack_height": 3,
-    "optimization_mode": "stay_together"
-}
+	[
+		{
+			"name": "Example Item A",
+			"shape": "box",
+			"length": 48,
+			"width": 48,
+			"height": 48,
+			"weight": 100,
+			"quantity": 20,
+			"color": "#00d4ff",
+			"stackable": true,
+			"canPlaceOnTop": true,
+			"maxStackHeight": 3,
+			"rotationAllowed": true,
+			"tippingAllowed": false,
+			"id": "1c6ce2f4-760e-4b60-a5a1-aca824fb8a75"
+		},
+		{
+			"name": "Example Item B",
+			"shape": "box",
+			"length": 60,
+			"width": 60,
+			"height": 30,
+			"weight": 400,
+			"quantity": 6,
+			"color": "#7c3aed",
+			"stackable": true,
+			"canPlaceOnTop": true,
+			"maxStackHeight": 3,
+			"rotationAllowed": true,
+			"tippingAllowed": false,
+			"id": "36ed01eb-a63b-4e4a-8185-2ce61b4aff62"
+		}
+	]
 </code>
 </pre>
 	<h3>Response Data:</h3>
@@ -178,7 +143,6 @@ headerTitle: truckload.io (web)
 		<a href="..\rawdata\rawoutput.json">Full Raw Data Example - Response</a>
 	</p>
 </section>
-
 
 <section>
 	<h2>Contact</h2>
