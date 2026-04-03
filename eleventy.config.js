@@ -2,7 +2,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("CNAME");
-	eleventyConfig.addPassthroughCopy("apps/truckload-io/imgs");
+	eleventyConfig.addPassthroughCopy("apps/*/imgs/");
+	eleventyConfig.addPassthroughCopy("apps/*/rawdata/");
 
 	return {
 		dir: {
