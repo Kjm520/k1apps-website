@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("CNAME");
 	eleventyConfig.addPassthroughCopy("apps/*/imgs/");
 	eleventyConfig.addPassthroughCopy("apps/*/rawdata/");
+	eleventyConfig.addPassthroughCopy("public/");
 
 	return {
 		dir: {
