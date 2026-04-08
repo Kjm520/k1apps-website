@@ -30,7 +30,7 @@ module.exports = [
     slug: "buy-later-ios",
     type: "iOS App",
     tags: ["React Native", "Expo", "JSX"],
-    description: "Delay impulse buys with a fixed 30 day cooldown",
+    description: "Improve spending habits by adding a cooldown period between wanting to buy something and actually buying it.",
     link: "https://apps.apple.com/us/app/buy-later-30-day-countdown/id6745124585",
     linkLabel: "View in App Store",
     images: ["/apps/buy-later-ios/imgs/01.png", "/apps/buy-later-ios/imgs/02.png", "/apps/buy-later-ios/imgs/03.png"],

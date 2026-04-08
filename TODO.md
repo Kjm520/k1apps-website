@@ -7,3 +7,9 @@ Could add K1 Apps card, this site itself, to the home page. More so just to foll
 
 
 update app store links
+
+
+there is still a wordpress wp-content link
+
+
+need favicon
