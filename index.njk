@@ -57,6 +57,14 @@ title: K1 Apps
 			<img class="preview-pic" src="{{ img }}" alt="{{ project.name }} screenshot" />
 			{% endfor %}
 		</div>
+		{% elif project.comingSoon %}
+		<div class="divider"></div>
+		<div class="cardRight cardRight--coming-soon">
+			<div class="coming-soon-placeholder">
+				<span class="coming-soon-label">Screenshots</span>
+				<span class="coming-soon-headline">Coming Soon</span>
+			</div>
+		</div>
 		{% endif %}
 	</div>
 	{% endfor %}
