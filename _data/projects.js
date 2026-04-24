@@ -33,8 +33,7 @@ module.exports = [
     description: "Adaptive math diagnostic that maps your skills and points you to what to practice next.",
     link: "https://apps.apple.com/us/developer/kevin-mcdonald/id1808477872",
     linkLabel: "Coming Soon to App Store",
-    comingSoon: true,
-    images: [],
+    images: ["/apps/dynamath-ios/imgs/01.png", "/apps/dynamath-ios/imgs/02.png", "/apps/dynamath-ios/imgs/03.png"],
   },
   {
     name: "Buy Later",
