@@ -31,8 +31,8 @@ module.exports = [
     type: "iOS App",
     tags: ["React Native", "Expo", "TSX", "SwiftMath"],
     description: "Adaptive math diagnostic that maps your skills and points you to what to practice next.",
-    link: "https://apps.apple.com/us/developer/kevin-mcdonald/id1808477872",
-    linkLabel: "Coming Soon to App Store",
+    link: "https://apps.apple.com/us/app/dynamic-mathematics/id6762821417",
+    linkLabel: "View in App Store",
     images: ["/apps/dynamath-ios/imgs/01.png", "/apps/dynamath-ios/imgs/02.png", "/apps/dynamath-ios/imgs/03.png"],
   },
   {
