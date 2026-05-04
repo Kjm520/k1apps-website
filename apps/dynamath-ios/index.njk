@@ -99,7 +99,7 @@ headerTitle: Dynamic Mathematics
 
 
 <section>
-	<h1>Privacy Policy</h1>
+	<h1 id="privacy">Privacy Policy</h1>
 	<p><em>Effective date: May 4, 2026</em></p>
 	<p>
 		Dynamic Mathematics is built by an individual developer. The app does not collect personally identifiable
@@ -115,7 +115,7 @@ headerTitle: Dynamic Mathematics
 		<li>No name, email, phone number, address, date of birth, or other identifying information</li>
 		<li>No account - there is no sign-up, sign-in, user ID, or cloud profile</li>
 		<li>No contacts, calendar, photos, location-services data, camera, microphone, or health data</li>
-		<li>No advertising identifiers (IDFA) and no ad SDKs</li>
+		<li>No advertising identifiers (IDFA), no ad networks, and no third-party advertising tracking</li>
 	</ul>
 </section>
 
@@ -130,8 +130,7 @@ headerTitle: Dynamic Mathematics
 		<li><strong>Usage events</strong> - which screens are viewed (e.g., Skills, Problem, Custom Select), when sessions
 			start, when a problem is answered (correct or incorrect), the skill or topic involved, and the practice mode
 			used.</li>
-		<li><strong>Device &amp; technical info</strong> - device model, operating system version, app version, language,
-			and approximate location derived from IP address (typically city-level).</li>
+		<li><strong>Device &amp; technical info</strong> - device model, operating system version, app version, and language.</li>
 		<li><strong>Anonymous identifiers</strong> - a Firebase-generated installation ID and an Apple-provided
 			identifier (IDFV) used to distinguish one installation from another.</li>
 		<li><strong>Engagement metrics</strong> - session length, time spent in the app, and first-open events.</li>
@@ -139,8 +138,9 @@ headerTitle: Dynamic Mathematics
 	<p>
 		Analytics events are processed and retained by Google as part of the Firebase service. See Google's privacy
 		practices at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.
-		You can limit the data shared with developers through iOS settings under
-		<em>Settings &gt; Privacy &amp; Security &gt; Tracking</em> and <em>Analytics &amp; Improvements</em>.
+		Because the app does not use the IDFA, Apple's App Tracking Transparency prompt is not shown and the iOS
+		"Allow Apps to Request to Track" setting does not apply to this app. To stop further analytics collection,
+		delete the app from your device.
 	</p>
 </section>
 
