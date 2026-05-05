@@ -51,13 +51,21 @@ title: K1 Apps
 			<p class="card-subtitle">{{ project.subtitle }}</p>
 			<p class="card-desc">{{ project.description }}</p>
 			<div class="card-actions">
+
+
+				{% if project.link %}
 				<button class="btn" type="button" onclick="window.open('{{ project.link }}')">
 					{{ project.linkLabel }}
 				</button>
+				{% endif %}
+
+
+
 				{% if project.githubLink %}
-				<button aria-label="github" class="btn-social-icon-github" type="button" onclick="window.open('{{ project.githubLink }}')">
+				<button aria-label="github" class="btn-social-icon-github" type="button"
+					onclick="window.open('{{ project.githubLink }}')">
 					<svg class="card-social-icon" aria-hidden="true">
-						{% include "public/k1_logo/icons/mark-github-24.svg" %}	
+						{% include "public/k1_logo/icons/mark-github-24.svg" %}
 					</svg>
 
 				</button>
