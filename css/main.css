@@ -259,6 +259,7 @@ main {
   flex-wrap: wrap;
   gap: 6px;
   justify-content: center;
+  margin-top: 0.6rem;
   margin-bottom: 10px;
 }
 
@@ -270,6 +271,10 @@ main {
   color: #001840;
   line-height: 1;
   margin: 0;
+  align-self: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 24, 64, 0.16);
+  padding-bottom: 0.6rem;
 }
 
 .card-name a {
@@ -508,6 +513,7 @@ main {
 
   .card-name {
     font-size: 34px;
+    align-self: center;
   }
 
   h1 {

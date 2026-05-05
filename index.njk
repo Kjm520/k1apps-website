@@ -36,11 +36,6 @@ title: K1 Apps
 	{% for project in projects %}
 	<div class="card">
 		<div class="cardLeft">
-			<div class="card-pills">
-				<span class="badge badge--{{ project.type | lower | replace(' ', '-') }}">{{ project.type }}</span>
-				{% if project.tags %}{% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif
-				%}
-			</div>
 			<h2 class="card-name">
 				{% if project.nameLinked %}
 				<a href="/apps/{{ project.slug }}/">{{ project.name }}</a>
@@ -48,6 +43,12 @@ title: K1 Apps
 				{{ project.name }}
 				{% endif %}
 			</h2>
+			<div class="card-pills">
+				<span class="badge badge--{{ project.type | lower | replace(' ', '-') }}">{{ project.type }}</span>
+				{% if project.tags %}{% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}{% endif
+				%}
+			</div>
+
 			<p class="card-subtitle">{{ project.subtitle }}</p>
 			<p class="card-desc">{{ project.description }}</p>
 			<div class="card-actions">
