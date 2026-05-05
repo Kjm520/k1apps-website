@@ -60,7 +60,9 @@ title: K1 Apps
 				</button>
 				{% endif %}
 
-
+				{% if project.nameLinked %}
+				<a class="btn-about" href="/apps/{{ project.slug }}/">Details</a>
+				{% endif %}
 
 				{% if project.githubLink %}
 				<button aria-label="github" class="btn-social-icon-github" type="button"
@@ -68,7 +70,6 @@ title: K1 Apps
 					<svg class="card-social-icon" aria-hidden="true">
 						{% include "public/k1_logo/icons/mark-github-24.svg" %}
 					</svg>
-
 				</button>
 				{% endif %}
 			</div>
