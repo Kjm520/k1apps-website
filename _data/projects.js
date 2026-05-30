@@ -54,9 +54,10 @@ module.exports = [
     slug: "do-later-ios",
     type: "iOS App",
     tags: ["React Native", "Expo", "Expo Router", "TypeScript", "Reanimated", "EAS"],
-    description: "A minimalist to-do list with recurring task generators. Everything stays on your device.",
-    comingSoon: true,
-    images: [],
+    description: "A minimalist to-do list with recurring task generators.",
+    link: "",
+    linkLabel: "Coming Soon",
+    images: ["/apps/do-later-ios/imgs/01.png", "/apps/do-later-ios/imgs/02.png", "/apps/do-later-ios/imgs/03.png"],
   },
   {
     name: "K1 Freight",
