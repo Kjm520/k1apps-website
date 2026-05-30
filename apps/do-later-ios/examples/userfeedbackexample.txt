@@ -1,0 +1,13 @@
+App: do-later-ios
+Submitted: 2026-05-30 04:17 UTC
+Reply-To: not provided
+
+Message:
+I love the app, thanks.
+
+Metadata:
+  version: 1.0.1
+  build: 3
+  commit: f197b74
+  platform: iOS 26.5
+  device: iPhone 16 Pro
