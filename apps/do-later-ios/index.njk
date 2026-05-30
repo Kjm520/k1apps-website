@@ -27,8 +27,8 @@ headerTitle: Do Later · A Minimalist To-Do List
 		<li>Separate tab for completed tasks</li>
 		<li>Light and dark themes, with optional compact rows</li>
 		<li>Swipe to complete or delete</li>
-		<li>Always free: 100% ad-free, no sign-in, no subscriptions</li>
-		<li>Private: your tasks live on your device - no accounts, no ads, no tracking</li>
+		<li>Free, no ads, sign-in, accounts, or subscriptions</li>
+		<li>Private: your tasks live on your device - no accounts</li>
 	</ul>
 </section>
 
@@ -93,8 +93,18 @@ headerTitle: Do Later · A Minimalist To-Do List
 		When the app launches, it sends a single anonymous "ping" to our feedback service so we can gauge how many
 		times the app is opened. This request contains only a fixed source label identifying the app
 		(<code>do-later-ios</code>); it includes no account, no personal information, and none of your task content. It
-		is not used to track or identify you across apps or over time.
+		is not used to track or identify you across apps or over time. It is equivalent to trying to go to the url <a href="https://feedback.k1apps.dev/ping?source=do-later-ios">https://feedback.k1apps.dev/ping?source=do-later-ios</a>.
 	</p>
+	<h3>Example of a ping:</h3>
+	<pre>
+		<code>
+		useEffect(() => {
+			fetch("https://feedback.k1apps.dev/ping?source=do-later-ios", {
+				method: "GET",
+			}).catch(() => {});
+		}, []);
+		</code>
+	</pre>
 </section>
 
 <section>
@@ -114,6 +124,24 @@ headerTitle: Do Later · A Minimalist To-Do List
 		Your tasks, generators, and other in-app data are never included. Feedback you submit is retained by the
 		developer so we can read and respond to it.
 	</p>
+	<h3>Example of data:</h3>
+	<pre>
+		<code>
+	App: do-later-ios
+	Submitted: 2026-05-30 04:17 UTC
+	Reply-To: not provided
+
+	Message:
+	I love the app, thanks.
+
+	Metadata:
+	version: 1.0.1
+	build: 3
+	commit: f197b74
+	platform: iOS 26.5
+	device: iPhone 16 Pro
+		</code>
+	</pre>
 </section>
 
 <section>
