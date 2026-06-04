@@ -55,8 +55,8 @@ module.exports = [
     type: "iOS App",
     tags: ["React Native", "Expo", "Expo Router", "TypeScript", "Reanimated", "EAS"],
     description: "A minimalist to-do list with recurring task generators.",
-    link: "",
-    linkLabel: "Coming Soon",
+    link: "https://apps.apple.com/us/app/do-later-to-do-list/id6774756670",
+    linkLabel: "View in App Store",
     images: ["/apps/do-later-ios/imgs/01.png", "/apps/do-later-ios/imgs/02.png", "/apps/do-later-ios/imgs/03.png"],
   },
   {
