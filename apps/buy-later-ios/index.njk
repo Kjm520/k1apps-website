@@ -16,7 +16,7 @@ headerTitle: Buy Later · 30 Day Countdown
 	<p>
 		It can be easy to open an app and buy something in under a minute. <strong>Buy Later</strong> is designed to
 		create a buffer in that moment. The app provides a minimal, clean interface where you can list things you want
-		as you think of them - once they make it through the fixed hold period, you can buy them (if you still think
+		as you think of them - once they make it through the fixed hold period, you can safely buy them (if you still think
 		it's a good idea).
 	</p>
 </section>
@@ -35,27 +35,13 @@ headerTitle: Buy Later · 30 Day Countdown
 <section>
 	<h2>System Requirements</h2>
 	<ul>
-		<li>iOS 14.0 or later</li>
-		<li>iPhone and iPad optimized</li>
-		<li>Offline-only: all data stays on your device</li>
+		<li>iPhone iOS 14.0 or later</li>
 	</ul>
 </section>
 
 <section>
 	<h2>Frequently Asked Questions</h2>
 	<dl>
-		<dt>How do I add a new item?</dt>
-		<dd>Tap the <strong>+</strong> button on the Pending tab, enter your item, and hit Save. Your timer starts immediately.</dd>
-
-		<dt>How do I delete an item?</dt>
-		<dd>Swipe left on the item you want to delete.</dd>
-
-		<dt>Where can I see completed items?</dt>
-		<dd>Switch to the <em>Completed</em> tab to review all items whose countdown has finished.</dd>
-
-		<dt>Can I customize the timer length?</dt>
-		<dd>Yes - you can choose a 10, 20, or 30 day hold period in Settings.</dd>
-
 		<dt>Where is my data stored?</dt>
 		<dd>
 			All data is stored locally on your device and is not accessible anywhere else. If you delete the app, all data is lost.
@@ -63,52 +49,98 @@ headerTitle: Buy Later · 30 Day Countdown
 	</dl>
 </section>
 
-<section>
-	<h2>Contact Support</h2>
-	<p>
-		For help, bug reports, or feature suggestions, email
-		<a href="mailto:kevin@k1apps.dev">kevin@k1apps.dev</a>.
-	</p>
-</section>
-
 
 <section>
 	<h1>Privacy Policy</h1>
 	<p>
 		Buy Later is committed to protecting your privacy. We do not collect, store, or transmit any personal
-		information. All data - including your items, countdown timers, and completion status - is stored locally
-		on your device and never leaves the app.
+		information.
 	</p>
 </section>
 
 <section>
 	<h2>Data Storage</h2>
 	<p>
-		All information is saved in secure on-device storage on your iPhone or iPad. We do not synchronize or back
-		up your data to any external servers unless you choose to do so via iCloud or other device-managed backups.
+		All information is saved in secure on-device storage on your device.
 	</p>
+</section>
+
+<section>
+	<h2>Usage Ping</h2>
+	<p>
+		When the app launches, it sends a single anonymous "ping" to our feedback service so we can gauge how many
+		times the app is opened. This request contains only a fixed source label identifying the app
+		(<code>example-app-ios</code>); it includes no account, no personal information, and none of your task content. It
+		cannot be used to track or identify you across apps or over time. It is equivalent to trying to go to the url <a
+			href="https://feedback.k1apps.dev/ping?source=example-app-ios">https://feedback.k1apps.dev/ping?source=example-app-ios</a>.
+	</p>
+	<h3>Example of a ping:</h3>
+	<pre>
+		<code>
+	useEffect(() => {
+		fetch("https://feedback.k1apps.dev/ping?source=example-app-ios", {
+			method: "GET",
+		}).catch(() => {});
+	}, []);
+		</code>
+	</pre>
+</section>
+
+<section>
+	<h2>Feedback Submissions</h2>
+	<p>
+		The app includes an optional feedback form. Nothing is sent unless you fill it out and tap Send. When you do,
+		your typed message is delivered to the developer along with a small amount of technical info to help
+		diagnose issues:
+	</p>
+	<ul>
+		<li>your message text</li>
+		<li>your email address - only if you choose to enter one for a reply (otherwise none is sent)</li>
+		<li>the app version and build number</li>
+		<li>your device model and iOS version</li>
+	</ul>
+	<p>
+		Your tasks, generators, and other in-app data are never included. Feedback you submit is retained by the
+		developer so we can read and respond to it.
+	</p>
+	<h3>Example of data:</h3>
+	<pre>
+		<code>
+	App: example-app-ios
+	Submitted: 2026-05-30 04:17 UTC
+	Reply-To: not provided
+
+	Message:
+	I love the app, thanks.
+
+	Metadata:
+	version: 1.0.1
+	build: 3
+	commit: f197b74
+	platform: iOS 26.5
+	device: iPhone 16 Pro
+		</code>
+	</pre>
 </section>
 
 <section>
 	<h2>Third-Party Services</h2>
 	<p>
-		Buy Later does not integrate any third-party analytics, advertising, or tracking services. The app functions
-		entirely offline, ensuring no external data collection or network dependency.
+		Buy Later does not integrate any third-party services.
 	</p>
 </section>
 
 <section>
 	<h2>Policy Updates</h2>
 	<p>
-		We may update this Privacy Policy to reflect improvements or changes in the app. Any significant revisions
-		will be posted here with the date of the version release.
+		We may update this Privacy Policy to reflect improvements or changes in the app.
 	</p>
 </section>
 
 <section>
-	<h2>Contact</h2>
+	<h2>Contact Support</h2>
 	<p>
-		Questions or concerns about our privacy practices? Email me at
+		For help, bug reports, privacy questions, feature suggestions, or for any other purpose, email
 		<a href="mailto:kevin@k1apps.dev">kevin@k1apps.dev</a>.
 	</p>
 </section>

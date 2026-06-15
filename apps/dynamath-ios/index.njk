@@ -11,11 +11,11 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 		<strong>Dynamic Mathematics</strong> is a math diagnostic and practice app for self-directed learners.
 	</p>
 	<p>
-		It uses an adaptive algorithm built on a graph of math skills - arithmetic, fractions, exponents, and
-		algebra - to figure out where your knowledge level is, then guides you toward what to work on next.
+		It uses an adaptive algorithm built on a graph of math skills - arithmetic, fractions, exponents, 
+		algebra, and so on - to figure out where your knowledge level is, then guides you toward what to work on next.
 	</p>
 	<p>
-		Unlike typical math apps, it is not a teach/learn app. It is a compass that points out which skills need
+		Unlike typical math apps, it is not meant to be a teach/learn app. It is a compass that points out which skills need
 		work. When you cannot solve a problem, you research it outside the app and return to prove you have
 		learned it.
 	</p>
@@ -25,11 +25,12 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 	<h2>Features</h2>
 	<ul>
 		<li>Adaptive problem selection based on a skill graph and per-skill mastery scoring</li>
-		<li>Hand-curated problem templates across arithmetic, fractions, exponents, and algebra</li>
+		<li>Hand-curated problem templates</li>
 		<li>Native math equation rendering via CoreText (SwiftMath)</li>
 		<li>Built-in scratchpad for working out problems</li>
 		<li>Algorithmic practice mode and custom practice mode (pick your own skills)</li>
 		<li>Per-skill mastery, accuracy, streak, and problem history tracking</li>
+		<li>Export and save your entire problem history for review</li>
 		<li>Topic Map - a visual graph of how math skills connect</li>
 		<li>No account, no ads, no personal data collected</li>
 	</ul>
@@ -38,8 +39,7 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 <section>
 	<h2>System Requirements</h2>
 	<ul>
-		<li>iOS 16.0 or later</li>
-		<li>iPhone and iPad</li>
+		<li>iPhone iOS 16.0 or later</li>
 		<li>Offline-only: all data stays on your device</li>
 	</ul>
 </section>
@@ -53,9 +53,9 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 	<ul>
 		<li><strong>Skills</strong> - view your mastery level on each skill, grouped by category</li>
 		<li><strong>Stats</strong> - overall score, problems solved, accuracy, and streaks</li>
-		<li><strong>Topic Map</strong> - visual graph of how math skills connect</li>
+		<li><strong>Topic Map</strong> - visual scaffold of how math skills are planned in-app</li>
 		<li><strong>Custom Practice</strong> - pick specific skills to practice (does not affect your stats)</li>
-		<li><strong>Settings</strong> - reset progress, how-it-works guide, problem history</li>
+		<li><strong>Settings</strong> - reset progress, how-it-works guide, feedback, problem history, etc</li>
 	</ul>
 </section>
 
@@ -63,49 +63,35 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 	<h2>Frequently Asked Questions</h2>
 	<dl>
 		<dt>Does the app teach math?</dt>
-		<dd>No. It diagnoses where you are and tells you what to work on. If you cannot solve a problem, look
-			it up outside the app, then come back and prove you have learned it.</dd>
+		<dd>No. It diagnoses where you are and tells you what to work on. When your skill has improved, the 
+			app automatically starts to sprinkle in problems from further skills that build upon the skills you've raised.</dd>
 
-		<dt>Are the problems AI-generated?</dt>
-		<dd>No. All problems come from hand-curated templates. No LLM or AI-generated content is used.</dd>
+		<dt>Are the problems AI generated?</dt>
+		<dd>No. All problems come from hand-curated templates. No LLM or AI generated content is used.</dd>
 
 		<dt>How does it decide what to give me next?</dt>
-		<dd>Each skill has a mastery estimate that updates as you answer. The app uses a graph of how skills
-			connect to pick a problem that is a good fit for your current level.</dd>
+		<dd>Each skill has a score that updates as you answer. Later topics are built with "foundational skills" 
+			so once you have high score in a topic's foundation skills, you will start getting those type of problems.</dd>
 
 		<dt>Can I pick what I want to practice?</dt>
 		<dd>Yes - use Custom Practice to select specific skills. Problems answered in that mode do not affect
-			your mastery stats.</dd>
+			your stats.</dd>
 
-		<dt>My progress feels stuck. What can I do?</dt>
-		<dd>Open Settings and use <strong>Reset Progress</strong>, then start again.</dd>
-
-		<dt>The app crashed - will I lose my data?</dt>
-		<dd>Data lives on your device in a local database. Deleting the app will clear your history, so only
-			reinstall if you are okay starting fresh.</dd>
+		<dt>I answered a problem correctly/incorrectly that the app said was wrong.</dt>
+		<dd>Message me here or through the in-app feedback function and I will get on it immediately.</dd>
 
 		<dt>Where is my data stored?</dt>
-		<dd>All data is stored locally on your device in a SQLite database. Nothing is sent off the device.</dd>
+		<dd>All data is stored locally on your device. Nothing is sent off the device. If you delete the app, all data will be lost.</dd>
 	</dl>
 </section>
 
 <section>
-	<h2>Contact Support</h2>
-	<p>
-		For help, bug reports, or feature suggestions, email
-		<a href="mailto:kevin@k1apps.dev">kevin@k1apps.dev</a>.
-	</p>
-</section>
-
-
-<section>
 	<h1 id="privacy">Privacy Policy</h1>
-	<p><em>Effective date: May 4, 2026</em></p>
+	<p><em>Effective date: June 15, 2026</em></p>
 	<p>
-		Dynamic Mathematics is built by an individual developer. The app does not collect personally identifiable
-		information. It uses Google Firebase Analytics to collect anonymous usage data so the developer can understand
-		how the app is used and improve it, and it transmits feedback you explicitly submit through the in-app feedback
-		form. Both are described in detail below.
+		Dynamic Mathematics is built by an individual developer and does not collect personally identifiable
+		information. There are options to submit feedback through the in-app feedback
+		form, and also a single URL "ping". Both are described in detail below.
 	</p>
 </section>
 
@@ -120,38 +106,12 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 </section>
 
 <section>
-	<h2>Analytics</h2>
-	<p>
-		The app uses <strong>Google Firebase Analytics</strong> to understand how the app is used so it can be improved.
-		The data collected is anonymous and not linked to your name, email, or Apple ID.
-	</p>
-	<p>Through Firebase Analytics, we automatically collect:</p>
-	<ul>
-		<li><strong>Usage events</strong> - which screens are viewed (e.g., Skills, Problem, Custom Select), when sessions
-			start, when a problem is answered (correct or incorrect), the skill or topic involved, and the practice mode
-			used.</li>
-		<li><strong>Device &amp; technical info</strong> - device model, operating system version, app version, and language.</li>
-		<li><strong>Anonymous identifiers</strong> - a Firebase-generated installation ID and an Apple-provided
-			identifier (IDFV) used to distinguish one installation from another.</li>
-		<li><strong>Engagement metrics</strong> - session length, time spent in the app, and first-open events.</li>
-	</ul>
-	<p>
-		Analytics events are processed and retained by Google as part of the Firebase service. See Google's privacy
-		practices at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.
-		Because the app does not use the IDFA, Apple's App Tracking Transparency prompt is not shown and the iOS
-		"Allow Apps to Request to Track" setting does not apply to this app. To stop further analytics collection,
-		delete the app from your device.
-	</p>
-</section>
-
-<section>
 	<h2>Information Stored on Your Device</h2>
 	<p>The app saves the following locally, in a SQLite database on your device:</p>
 	<ul>
 		<li>The math problems served, your answers, and whether each was correct, wrong, or skipped (timestamped)</li>
 		<li>Internal mastery estimates for each math skill</li>
 		<li>Current and best correct-answer streaks</li>
-		<li>Scratchpad drawing input during a single problem session (cleared automatically on the next problem)</li>
 	</ul>
 	<p>
 		This data never leaves your device. The app does not sync your problem history, answers, or stats to the
@@ -160,49 +120,82 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 </section>
 
 <section>
+	<h2>Data Storage</h2>
+	<p>
+		All information is saved in on-device storage on your iPhone. We do not synchronize or back up your data to any
+		external servers.
+	</p>
+</section>
+
+<section>
+	<h2>Usage Ping</h2>
+	<p>
+		When the app launches, it sends a single anonymous "ping" to our feedback service so we can gauge how many
+		times the app is opened. This request contains only a fixed source label identifying the app
+		(<code>example-app-ios</code>); it includes no account, no personal information, and none of your task content. It
+		cannot be used to track or identify you across apps or over time. It is equivalent to trying to go to the url <a
+			href="https://feedback.k1apps.dev/ping?source=example-app-ios">https://feedback.k1apps.dev/ping?source=example-app-ios</a>.
+	</p>
+	<h3>Example of a ping:</h3>
+	<pre>
+		<code>
+		useEffect(() => {
+			fetch("https://feedback.k1apps.dev/ping?source=example-app-ios", {
+				method: "GET",
+			}).catch(() => {});
+		}, []);
+		</code>
+	</pre>
+</section>
+
+<section>
 	<h2>Feedback Submissions</h2>
 	<p>
-		The app includes an optional <strong>Provide Feedback</strong> form inside Settings &gt; About. This
-		form is the only feature that transmits data off your device, and it only does so when you manually submit feedback.
-		When you submit feedback, the following is sent to a feedback backend operated in house by the same developer:
+		The app includes an optional feedback form. Nothing is sent unless you fill it out and tap Send. When you do,
+		your typed message is delivered to the developer along with a small amount of technical info to help
+		diagnose issues:
 	</p>
 	<ul>
-		<li>The feedback message text you typed</li>
-		<li>Your email address, <em>only if you choose to provide one</em> for a reply</li>
-		<li>Non-identifying technical metadata to help diagnose issues: app version, build number, commit hash,
-			iOS version, and device model (e.g., "iPhone 15")</li>
+		<li>your message text</li>
+		<li>your email address - only if you choose to enter one for a reply (otherwise none is sent)</li>
+		<li>the app version and build number</li>
+		<li>your device model and iOS version</li>
 	</ul>
 	<p>
-		Feedback is forwarded by email to the developer and is used solely to investigate and respond to your
-		message. It is not shared with third parties, not sold, and not used for advertising or analytics. 
+		Your tasks, generators, and other in-app data are never included. Feedback you submit is retained by the
+		developer so we can read and respond to it.
 	</p>
-	<p>
-		Feedback submissions pass through the feedback service at <code>feedback.k1apps.dev</code>, which is
-		operated by the same developer. The service logs only the submitting app identifier and timestamp for
-		abuse prevention; it does not log message contents.
-	</p>
+	<h3>Example of data:</h3>
+	<pre>
+		<code>
+	App: example-app-ios
+	Submitted: 2026-05-30 04:17 UTC
+	Reply-To: not provided
+
+	Message:
+	I love the app, thanks.
+
+	Metadata:
+	version: 1.0.1
+	build: 3
+	commit: f197b74
+	platform: iOS 26.5
+	device: iPhone 16 Pro
+		</code>
+	</pre>
 </section>
 
 <section>
 	<h2>Third-Party Services</h2>
 	<p>
-		The app uses Google Firebase Analytics, as described in the Analytics section above. No other third-party
-		services receive data from the app.
+		No third-party services receive data from the app.
 	</p>
 </section>
 
 <section>
 	<h2>Permissions</h2>
 	<p>
-		The app uses standard iOS haptic feedback (vibration on correct/wrong answers), which does not require
-		a permission prompt. No other iOS permissions are requested.
-	</p>
-</section>
-
-<section>
-	<h2>Children's Privacy</h2>
-	<p>
-		Dynamic Mathematics is suitable for self-directed learners of any age, including children. There are no accounts and no social features.
+		No iOS permissions are requested.
 	</p>
 </section>
 
@@ -217,15 +210,14 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 <section>
 	<h2>Policy Updates</h2>
 	<p>
-		This policy may be updated to reflect changes in the app. Significant revisions will be noted in the
-		app's release notes and here, with a new effective date.
+		This policy may be updated to reflect changes in the app.
 	</p>
 </section>
 
 <section>
-	<h2>Contact</h2>
+	<h2>Contact Support</h2>
 	<p>
-		Questions about privacy? Email
+		For help, bug reports, privacy questions, feature suggestions, or for any other purpose, email
 		<a href="mailto:kevin@k1apps.dev">kevin@k1apps.dev</a>.
 	</p>
 </section>
