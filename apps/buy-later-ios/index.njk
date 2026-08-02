@@ -28,7 +28,7 @@ headerTitle: Buy Later · 30 Day Countdown
 		<li>Fixed 10, 20, or 30 day hold period</li>
 		<li>Notifications when an item's timer completes (optional)</li>
 		<li>100% ad-free, no sign-in, and no accounts</li>
-		<li>Private: all data lives on your device - nothing is ever transmitted or retained</li>
+		<li>Private: data is only stored on your device</li>
 	</ul>
 </section>
 
@@ -53,8 +53,13 @@ headerTitle: Buy Later · 30 Day Countdown
 <section>
 	<h1>Privacy Policy</h1>
 	<p>
-		Buy Later is committed to protecting your privacy. We do not collect, store, or transmit any personal
-		information.
+		Buy Later is committed to protecting your privacy. We do not require an account and we do not collect personal
+		information. All content is stored locally on your device.
+	</p>
+	<p>
+		The app makes only two limited network requests, described below: an anonymous usage ping when it launches, and
+		a feedback message that is sent only if you choose to submit one. Neither includes the contents of your saved
+		items.
 	</p>
 </section>
 
@@ -70,15 +75,15 @@ headerTitle: Buy Later · 30 Day Countdown
 	<p>
 		When the app launches, it sends a single anonymous "ping" to our feedback service so we can gauge how many
 		times the app is opened. This request contains only a fixed source label identifying the app
-		(<code>example-app-ios</code>); it includes no account, no personal information, and none of your task content. It
+		(<code>buy-later-ios</code>); it includes no account, no personal information, and none of your item content. It
 		cannot be used to track or identify you across apps or over time. It is equivalent to trying to go to the url <a
-			href="https://feedback.k1apps.dev/ping?source=example-app-ios">https://feedback.k1apps.dev/ping?source=example-app-ios</a>.
+			href="https://feedback.k1apps.dev/ping?source=buy-later-ios">https://feedback.k1apps.dev/ping?source=buy-later-ios</a>.
 	</p>
 	<h3>Example of a ping:</h3>
 	<pre>
 		<code>
 	useEffect(() => {
-		fetch("https://feedback.k1apps.dev/ping?source=example-app-ios", {
+		fetch("https://feedback.k1apps.dev/ping?source=buy-later-ios", {
 			method: "GET",
 		}).catch(() => {});
 	}, []);
@@ -100,13 +105,13 @@ headerTitle: Buy Later · 30 Day Countdown
 		<li>your device model and iOS version</li>
 	</ul>
 	<p>
-		Your tasks, generators, and other in-app data are never included. Feedback you submit is retained by the
+		Your saved items and other in-app data are never included. Feedback you submit is retained by the
 		developer so we can read and respond to it.
 	</p>
 	<h3>Example of data:</h3>
 	<pre>
 		<code>
-	App: example-app-ios
+	App: buy-later-ios
 	Submitted: 2026-05-30 04:17 UTC
 	Reply-To: not provided
 

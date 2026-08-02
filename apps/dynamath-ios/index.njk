@@ -81,7 +81,9 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 		<dd>Message me here or through the in-app feedback function and I will get on it immediately.</dd>
 
 		<dt>Where is my data stored?</dt>
-		<dd>All data is stored locally on your device. Nothing is sent off the device. If you delete the app, all data will be lost.</dd>
+		<dd>All data is stored locally on your device. Aside from the anonymous launch ping and any feedback you choose
+			to send (both described in the Privacy Policy below), nothing is sent off the device. If you delete the app,
+			all data will be lost.</dd>
 	</dl>
 </section>
 
@@ -132,15 +134,16 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 	<p>
 		When the app launches, it sends a single anonymous "ping" to our feedback service so we can gauge how many
 		times the app is opened. This request contains only a fixed source label identifying the app
-		(<code>example-app-ios</code>); it includes no account, no personal information, and none of your task content. It
+		(<code>dynamic-mathematics-ios</code>); it includes no account, no personal information, and none of your
+		practice data. It
 		cannot be used to track or identify you across apps or over time. It is equivalent to trying to go to the url <a
-			href="https://feedback.k1apps.dev/ping?source=example-app-ios">https://feedback.k1apps.dev/ping?source=example-app-ios</a>.
+			href="https://feedback.k1apps.dev/ping?source=dynamic-mathematics-ios">https://feedback.k1apps.dev/ping?source=dynamic-mathematics-ios</a>.
 	</p>
 	<h3>Example of a ping:</h3>
 	<pre>
 		<code>
 		useEffect(() => {
-			fetch("https://feedback.k1apps.dev/ping?source=example-app-ios", {
+			fetch("https://feedback.k1apps.dev/ping?source=dynamic-mathematics-ios", {
 				method: "GET",
 			}).catch(() => {});
 		}, []);
@@ -162,13 +165,13 @@ headerTitle: Dynamic Mathematics · Adaptive Math Practice
 		<li>your device model and iOS version</li>
 	</ul>
 	<p>
-		Your tasks, generators, and other in-app data are never included. Feedback you submit is retained by the
+		Your problem history, stats, and other in-app data are never included. Feedback you submit is retained by the
 		developer so we can read and respond to it.
 	</p>
 	<h3>Example of data:</h3>
 	<pre>
 		<code>
-	App: example-app-ios
+	App: dynamic-mathematics-ios
 	Submitted: 2026-05-30 04:17 UTC
 	Reply-To: not provided
 
