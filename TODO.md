@@ -4,3 +4,6 @@
 
 k1apps.dev
 k1a.dev
+
+
+[11/25/2026] Need to implement a method to archive old projects, like soon to be the truckload-io-ios version
